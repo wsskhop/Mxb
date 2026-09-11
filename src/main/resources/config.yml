@@ -1,0 +1,49 @@
+# ========== 封禁踢出界面 ==========
+# 可用变量:
+#   %player%      玩家名
+#   %reason%      封禁原因 (type.yml)
+#   %cheat_type%  作弊类型名
+#   %remaining%   剩余时间
+#   %expire%      解封时间
+kick-screen:
+  - "&8&m--------&r &c&l你已被封禁 &8&m--------"
+    - ""
+      - "&7封禁原因: &f%reason%"
+        - "&7作弊类型: &f%cheat_type%"
+          - "&7剩余时间: &f%remaining%"
+            - "&7解封时间: &f%expire%"
+              - ""
+                - "&7如有疑问请联系管理员申诉"
+                  - "&8&m--------------------------------"
+
+                  # ========== 警告踢出界面 ==========
+                  # 可用变量:
+                  #   %player%      玩家名
+                  #   %cheat_type%  作弊类型名
+                  #   %count%       当前警告次数
+                  #   %threshold%   封禁阈值
+                  #   %remaining%   距离封禁还差几次
+                  warn-screen:
+                    - "&8&m--------&r &e&l你已被警告 &8&m--------"
+                      - ""
+                        - "&7作弊类型: &f%cheat_type%"
+                          - "&7当前警告: &c%count%&7/&c%threshold%"
+                            - "&7再被警告 &c%remaining% &7次将被封禁"
+                              - ""
+                                - "&7请遵守服务器规则"
+                                  - "&8&m--------------------------------"
+
+                                  messages:
+                                    no-permission: "&c你没有权限执行此操作"
+                                      player-not-found: "&c找不到该玩家"
+                                        type-not-found: "&c找不到该作弊类型"
+                                          not-banned: "&c该玩家当前没有被封禁"
+                                            unban-success: "&a已解封 &e%player%"
+                                              unban-broadcast: "&e%player% &7已被 &e%operator% &7解封"
+                                                clearwarn-success: "&a已清除 &e%player% &a的 &e%cheat_type% &a警告次数"
+                                                  clearwarn-none: "&c该玩家该类型本来就没有警告记录"
+                                                    history-empty: "&c该玩家没有封禁记录"
+                                                      history-header: "&6===== &e%player% &6的封禁记录 ====="
+                                                        history-entry: "&7#%id% %state% &7| 类型: &f%cheat_type% &7| 原因: &f%reason% &7| 开始: &f%start% &7| 结束: &f%end% &7| 操作: &f%operator%"
+                                                          warn-broadcast: "&e%player% &7因 &c%cheat_type% &7已被警告 &7(&c%count%&7/&c%threshold%&7)"
+                                                            ban-broadcast: "&c%player% &7因 &c%cheat_type% &7已被封禁 &f%duration%"

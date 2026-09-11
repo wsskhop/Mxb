@@ -1,0 +1,79 @@
+# 作弊类型配置
+cheat-types:
+  killaura:
+      name: "&c&l杀戮光环"
+          icon: DIAMOND_SWORD
+              slot: 10
+                  lore:
+                        - "&7警告次数: &e%threshold%"
+                              - "&7封禁时长: &e%duration%"
+                                    - ""
+                                          - "&a点击选择该作弊类型"
+                                              warn-threshold: 3
+                                                  ban-duration: "7d"
+                                                      reason: "使用杀戮光环作弊"
+
+                                                        fly:
+                                                            name: "&b&l飞行"
+                                                                icon: FEATHER
+                                                                    slot: 11
+                                                                        lore:
+                                                                              - "&7警告次数: &e%threshold%"
+                                                                                    - "&7封禁时长: &e%duration%"
+                                                                                          - ""
+                                                                                                - "&a点击选择该作弊类型"
+                                                                                                    warn-threshold: 2
+                                                                                                        ban-duration: "3d"
+                                                                                                            reason: "使用飞行作弊"
+
+                                                                                                              reach:
+                                                                                                                  name: "&d&l攻击距离"
+                                                                                                                      icon: STICK
+                                                                                                                          slot: 12
+                                                                                                                              lore:
+                                                                                                                                    - "&7警告次数: &e%threshold%"
+                                                                                                                                          - "&7封禁时长: &e%duration%"
+                                                                                                                                                - ""
+                                                                                                                                                      - "&a点击选择该作弊类型"
+                                                                                                                                                          warn-threshold: 3
+                                                                                                                                                              ban-duration: "5d"
+                                                                                                                                                                  reason: "使用攻击距离作弊"
+
+                                                                                                                                                                    xray:
+                                                                                                                                                                        name: "&6&l透视"
+                                                                                                                                                                            icon: DIAMOND_PICKAXE
+                                                                                                                                                                                slot: 13
+                                                                                                                                                                                    lore:
+                                                                                                                                                                                          - "&7警告次数: &e%threshold%"
+                                                                                                                                                                                                - "&7封禁时长: &e%duration%"
+                                                                                                                                                                                                      - ""
+                                                                                                                                                                                                            - "&a点击选择该作弊类型"
+                                                                                                                                                                                                                warn-threshold: 2
+                                                                                                                                                                                                                    ban-duration: "14d"
+                                                                                                                                                                                                                        reason: "使用透视作弊"
+
+                                                                                                                                                                                                                          speed:
+                                                                                                                                                                                                                              name: "&a&l加速"
+                                                                                                                                                                                                                                  icon: SUGAR
+                                                                                                                                                                                                                                      slot: 14
+                                                                                                                                                                                                                                          lore:
+                                                                                                                                                                                                                                                - "&7警告次数: &e%threshold%"
+                                                                                                                                                                                                                                                      - "&7封禁时长: &e%duration%"
+                                                                                                                                                                                                                                                            - ""
+                                                                                                                                                                                                                                                                  - "&a点击选择该作弊类型"
+                                                                                                                                                                                                                                                                      warn-threshold: 3
+                                                                                                                                                                                                                                                                          ban-duration: "3d"
+                                                                                                                                                                                                                                                                              reason: "使用加速作弊"
+
+                                                                                                                                                                                                                                                                                other:
+                                                                                                                                                                                                                                                                                    name: "&7&l其他作弊"
+                                                                                                                                                                                                                                                                                        icon: BARRIER
+                                                                                                                                                                                                                                                                                            slot: 16
+                                                                                                                                                                                                                                                                                                lore:
+                                                                                                                                                                                                                                                                                                      - "&7警告次数: &e%threshold%"
+                                                                                                                                                                                                                                                                                                            - "&7封禁时长: &e%duration%"
+                                                                                                                                                                                                                                                                                                                  - ""
+                                                                                                                                                                                                                                                                                                                        - "&a点击选择该作弊类型"
+                                                                                                                                                                                                                                                                                                                            warn-threshold: 1
+                                                                                                                                                                                                                                                                                                                                ban-duration: "-1"
+                                                                                                                                                                                                                                                                                                                                    reason: "使用作弊 (其他)"
