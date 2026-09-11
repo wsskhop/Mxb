@@ -8,7 +8,7 @@ description: 管理员封禁插件
 commands:
   mxb:
       description: 打开封禁管理菜单
-          usage: '/mxb [unban|history|clearwarn|help]'
+          usage: /mxb
               aliases: [mxban]
 
               permissions:
